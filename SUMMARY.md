@@ -32,7 +32,7 @@
 
 * [Chapter 15: The Render server](15-rendering-on-render.md)
 
-* [Chapter 16: Geodjango](16-creating-geodjang-project.md)
+* [Chapter 16: Geodjango](16-creating-geodjango-project.md)
 
 * [Chapter 17: Configuring Geodjango](17-geodjango-essentials.md)
 
