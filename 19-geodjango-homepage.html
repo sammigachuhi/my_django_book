@@ -1,0 +1,645 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 19: A Geodjango template · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="20-geodjango-leaflet.html" />
+    
+    
+    <link rel="prev" href="18-geodjango-model.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 19: A Geodjango template</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-19-a-geodjango-template">Chapter 19: A Geodjango template</h1>
+<p>We want to create some templates. In Django, a <a href="https://docs.djangoproject.com/en/5.2/topics/templates/" target="_blank">template</a> contains the static part of the desired HTML output as well as some syntax that describes how a dynamic content will be inserted. </p>
+<p>We will create some templates for:</p>
+<ol>
+<li><p>Our geolocations homepage.</p>
+</li>
+<li><p>Our geolocations responses</p>
+</li>
+<li><p>A webmap for where each of our surveys took place </p>
+</li>
+</ol>
+<h2 id="create-the-templates-folder">Create the <code>templates</code> folder</h2>
+<p>Within our <code>geolocations</code> app, create <code>templates</code> folder and within it create the <code>geolocations</code> folder. We use this naming convention of <code>app_name/templates/app_name</code> to avoid clashes with other apps that may have the same name.</p>
+<p>Within the <code>geolocations/templates/geolocations</code> directory, create an <code>index.html</code> file. So your templates structure will look like:</p>
+<pre><code>geolocations
+&#x251C;&#x2500;&#x2500; apps.py
+&#x251C;&#x2500;&#x2500; templates
+&#x2502;   &#x2514;&#x2500;&#x2500; geolocations
+&#x2502;       &#x2514;&#x2500;&#x2500; index.html
+</code></pre><p>Within the <code>index.html</code> file, insert the below content.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Geolocations app&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;We would like to survey you if you plan to be a GMO farmer!&lt;/h1&gt;
+    &lt;embed src=&quot;https://sammigachuhi.github.io/pro-gmo-website/&quot; type=&quot;text/html&quot; width=&quot;1600px&quot; height=&quot;800px&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>This is a nested website that also hosts the Pro-GMO website from <a href="https://sammigachuhi.github.io/pro-gmo-website/" target="_blank">here</a>. We use the <code>&lt;embed&gt;</code> tag to embed the Pro-GMO website within our <code>index.html</code>. </p>
+<h2 id="configuring-the-views">Configuring the views</h2>
+<p>Go to your <code>geolocations/views.py</code> file. Change the home function from returning a simple HttpsResponse via <code>return HttpsResponse</code> to rendering a html page via the <code>render()</code> function. </p>
+<pre><code>def home(request):
+    return render(request, &quot;geolocations/index.html&quot;, {})
+</code></pre><p>Now, if you run <code>python3 manage.py runserver</code> and go to your local host <code>http://127.0.0.1:8000/</code>, you will see our homepage as below.</p>
+<p><img src="images/new_geolocations_home_page.PNG" alt="New geolocations home page"></p>
+<h2 id="create-the-base-template">Create the base template</h2>
+<p>We would like to create a template that fulfills purpose #2: <em>Our geolocations responses</em>.</p>
+<p>As the first thing, create a <code>templates</code> folder within the <code>my_geodjango</code> directory. Inside this <code>templates</code> folder, create a <code>base.html</code> file which shall be the base template for all of our app&apos;s templates.</p>
+<pre><code>templates
+&#x2514;&#x2500;&#x2500; base.html
+</code></pre><p>Inside the <code>base.html</code> insert the following content:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;{% block title %} Geolocation responses {% endblock title %}&lt;/title&gt;
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&quot;container&quot;&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    {% block base_content %} 
+
+    {% endblock base_content %}
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>In a master template, the block tag is a placeholder that will be replaced by a block in a child template with the same name. That is, the styling of the block shall remain as defined in the master template, but the content inserted shall be to your own customization.</p>
+<h2 id="create-the-child-template">Create the child template</h2>
+<p>Within your <code>templates/geolocations</code> folder, create a <code>responses.html</code> template. Thereafter, insert the following content:</p>
+<pre><code>{% extends &quot;base.html&quot; %}
+
+{% block base_content %}
+
+&lt;h1&gt; Geolocation app responses &lt;/h1&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    {% for response in responses %}
+
+    &lt;div class=&quot;col-md-4&quot;&gt;
+
+        &lt;div class=&quot;card mb-2&quot;&gt;
+
+            &lt;div class=&quot;card-body&quot;&gt;
+
+                &lt;h5 class=&quot;card-title&quot;&gt;Recorder: {{ response.recorder }}&lt;/h5&gt;
+
+                &lt;p class=&quot;card-text&quot;&gt;Responder: {{ response.names }}&lt;/p&gt;
+
+                &lt;p class=&quot;card-text&quot;&gt;Age: {{ response.age }}&lt;/p&gt;
+
+                &lt;p class=&quot;card-text&quot;&gt;Crops grown: {{ response.crops }}&lt;/p&gt;
+
+                {% if response.image %}
+
+                    &lt;img src=&quot;{{ response.image.url }}&quot; width=&quot;150px&quot; height=&quot;90px&quot;&gt;
+
+                {% else %}
+
+                    &lt;p&gt; No image available &lt;/p&gt;
+
+                {% endif %}
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    {% endfor %}
+
+&lt;/div&gt;
+
+{% endblock base_content %}
+</code></pre><p>Here we use a <code>for</code> loop within the jinja template to go through every response stored in the variable called <code>responses</code>. You may ask, where is this value called <code>responses</code> stored? We shall create it in the <code>geolocations/views.py</code> file.</p>
+<p>Go back to your <code>geolocations/views.py</code> file. </p>
+<p>First import the <code>Question</code> class from your <code>models.py</code> file. </p>
+<pre><code>from .models import Question
+</code></pre><p>Thereafter add the following content.</p>
+<pre><code>def responses(request):
+    responses = Question.objects.all()
+    context = {
+        &quot;responses&quot;: responses,
+    }
+
+    return render(request, &quot;geolocations/responses.html&quot;, context)
+</code></pre><p>Let&apos;s go through each variable.</p>
+<p>The <code>responses</code> variable captures all content, that is, all the responses captured in the <code>Question</code> class. These include the <code>recorder</code>, <code>names</code>, <code>location</code>, <code>age</code>, <code>crops</code>, <code>image</code> and <code>comments</code> responses. It stores them inside a variable called <code>context</code>. </p>
+<p>Then in the last line, we render the contents inside a static html page called <code>responses.html</code> which contains only a subset of the responses we want to display!</p>
+<h2 id="the-urlspy-file">The <code>urls.py</code> file</h2>
+<p>Finally, in the <code>urls.py</code> file, we add the routing to our <code>responses.html</code> file.</p>
+<pre><code>urlpatterns = [
+    path(&quot;&quot;, views.home, name=&quot;home&quot;), 
+    path(&quot;responses/&quot;, views.responses, name=&quot;responses&quot;),
+]
+</code></pre><p>Now when we restart our server, and go to <code>http://127.0.0.1:8000/responses/</code> we can see the responses to some of our questions and their images. </p>
+<p><img src="images/geolocation_app_responses.PNG" alt="Responses"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="18-geodjango-model.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 18: Geodjango model">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="20-geodjango-leaflet.html" class="navigation navigation-next " aria-label="Next page: Chapter 20: Django leaflet">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 19: A Geodjango template","level":"1.21","depth":1,"next":{"title":"Chapter 20: Django leaflet","level":"1.22","depth":1,"path":"20-geodjango-leaflet.md","ref":"20-geodjango-leaflet.md","articles":[]},"previous":{"title":"Chapter 18: Geodjango model","level":"1.20","depth":1,"path":"18-geodjango-model.md","ref":"18-geodjango-model.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"19-geodjango-homepage.md","mtime":"2025-06-30T18:05:37.761Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:57:34.130Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

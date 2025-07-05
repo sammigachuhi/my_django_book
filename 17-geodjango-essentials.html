@@ -1,0 +1,610 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 17: Configuring Geodjango · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="18-geodjango-model.html" />
+    
+    
+    <link rel="prev" href="16-creating-geodjang-project.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 17: Configuring Geodjango</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-17-configuring-geodjango">Chapter 17: Configuring Geodjango</h1>
+<h2 id="prerequisites-for-geodjango">Prerequisites for geodjango</h2>
+<p>To work with Geodjango, you will first have to install Postgresql and PostGIS.</p>
+<p><a href="https://www.enterprisedb.com/postgres-tutorials/why-django-so-impressive-developing-postgresql-and-python?lang=en" target="_blank">Postgresql</a> is the world&apos;s most powerful object-oriented database. The number one reason for us to use Postgresql is because Geodjango will only work with Postgresql, and not the default database of spatial lite. Other than that, Postgresql is the preferred database when working with large projects where your app will handle a significantly large number of uers.</p>
+<p><a href="https://postgis.net/" target="_blank">PostGIS</a> extends the capabilities of the PostgreSQL relational database by adding support for storing, indexing, and querying geospatial data. </p>
+<h2 id="installing-postgresql">Installing Postgresql</h2>
+<p>We will follow the steps from the <a href="https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-22-04" target="_blank">Digital Ocean</a> website. </p>
+<p>First let&apos;s update our package manager cache by using <code>apt</code>:</p>
+<pre><code>sudo apt update
+</code></pre><p>The above code makes sure that the system has sufficient information about the dependencies of each package. The code does not install any software, it only provides the information of the latest dependencies for each package.</p>
+<p>When you run the above code you will be prompted for a username and password. </p>
+<p>Thereafter, run the following code to install the necessary packages to enable Postgresql run smoothly.</p>
+<pre><code>sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
+</code></pre><h2 id="creating-a-database-and-database-user">Creating a database and database user</h2>
+<p>During the Postgres installation, an operating system user named <code>postgres</code> was created to correspond to the <code>postgres</code> PostgreSQL administrative user. You need to use this user <code>postgres</code> to perform administrative tasks. Use <code>sudo</code> to pass in the username <code>postgres</code> along with the <code>-u</code> option which runs the command as a user, instead of root. Log into the interactive Postgres session by typing out the following:</p>
+<pre><code>sudo -u postgres psql
+</code></pre><p>If you run the above code, a new shell script appears: <code>postgres=#</code>...</p>
+<p>Now let&apos;s create a database called <code>my_geodjango</code>. </p>
+<pre><code>CREATE DATABASE my_geodjango;
+</code></pre><p>Now let&apos;s create a user for this database. </p>
+<pre><code>CREATE USER gachuhi WITH PASSWORD &apos;2013&apos;;
+</code></pre><p>Let&apos;s do some modifications that will speed up our database operations.</p>
+<pre><code>ALTER ROLE gachuhi SET client_encoding TO &apos;utf8&apos;;
+</code></pre><p>Let&apos;s grant all priviledges to the user <code>samuel</code>.</p>
+<pre><code>GRANT ALL PRIVILEGES ON DATABASE my_geodjango TO gachuhi;
+</code></pre><p>As a sanity check to see a list of the existing databases and to confirm the newly created is one of them you can do this via: <code>\list</code>.</p>
+<pre><code>List of databases
+     Name     |  Owner   | Encoding | Collate |  Ctype  |     Access privileges     
+--------------+----------+----------+---------+---------+---------------------------
+ my_django    | postgres | UTF8     | C.UTF-8 | C.UTF-8 | =Tc/postgres             +
+              |          |          |         |         | postgres=CTc/postgres    +
+              |          |          |         |         | samuel=CTc/postgres
+ my_geodjango | postgres | UTF8     | C.UTF-8 | C.UTF-8 | =Tc/postgres             +
+              |          |          |         |         | postgres=CTc/postgres    +
+              |          |          |         |         | gachuhi=CTc/postgres
+
+--snip--
+</code></pre><p>You can now exit the shell session via: <code>\q</code>.</p>
+<h2 id="installing-psycopg2">Installing <code>psycopg2</code></h2>
+<p>This package is used to connect Python to the Postgresql database.</p>
+<pre><code>pip install Django psycopg2
+</code></pre><h1 id="configuring-our-database">Configuring our database</h1>
+<p>As mentioned earlier, Geodjango will only work with the Postgresql database. And by the way, it is preferable to work with Postgresql for larger projects. </p>
+<p>The default database for any Django project is the sqlite database as shown below.</p>
+<pre><code>DATABASES = {
+    &apos;default&apos;: {
+        &apos;ENGINE&apos;: &apos;django.db.backends.sqlite3&apos;,
+        &apos;NAME&apos;: BASE_DIR / &apos;db.sqlite3&apos;,
+    }
+}
+</code></pre><p>However, we shall comment out the entire <code>&apos;default&apos;</code> dictionary and replace it with the details of our Postgis enabled database.<sup><a href="#fn_1" id="reffn_1">1</a></sup> </p>
+<p>Replace the entire <code>DATABASE</code> variable with the new defaults. You can choose to comment out or completely erase the former <code>&apos;defaults&apos;</code> values. I prefer to comment out so that I can easily revert to the originals in case things get tricky!</p>
+<pre><code>DATABASES = {
+    # &apos;default&apos;: {
+    #     &apos;ENGINE&apos;: &apos;django.db.backends.sqlite3&apos;,
+    #     &apos;NAME&apos;: BASE_DIR / &apos;db.sqlite3&apos;,
+    # }
+
+    &apos;default&apos;: {
+        &apos;ENGINE&apos;: &apos;django.contrib.gis.db.backends.postgis&apos;,
+        &apos;NAME&apos;: &apos;my_geodjango&apos;,
+        &apos;USER&apos;: &apos;gachuhi&apos;,
+        &apos;PASSWORD&apos;: &apos;2013&apos;,
+        &apos;HOST&apos;: &apos;localhost&apos;,
+        &apos;PORT&apos;: &apos;&apos;,
+    }
+}
+</code></pre><blockquote id="fn_1">
+<sup>1</sup>. <strong>NB</strong>: Other literature recommend setting the <code>ENGINE</code> key to <code>postgresql</code> but based on experience only the <code>postgis</code> value works efficiently.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<h2 id="installing-postgis">Installing PostGIS</h2>
+<p>To install Postgis, simpy run:</p>
+<pre><code>sudo apt install postgis
+</code></pre><p>You will be prompted for a password.</p>
+<p>Let&apos;s go back to the Postresql shell again. We want to enable the PostGIS extension for our Django project.</p>
+<pre><code>sudo -u postgres psql
+</code></pre><p>Once the Postgresql shell opens, insert the following:</p>
+<pre><code>CREATE EXTENSION IF NOT EXISTS postgis;
+</code></pre><p>We shall designate the user we created, <code>gachuhi</code> as the superuser. Insert the following in the Postgresql shell</p>
+<pre><code>ALTER ROLE gachuhi SUPERUSER;
+</code></pre><h2 id="make-migrations">Make migrations</h2>
+<p>To persist our changes to the database, let&apos;s register our migrations via <code>python3 manage.py makemigrations</code> and then implement them via <code>python3 manage.py migrate</code> respectively.</p>
+<h2 id="creating-a-superuser">Creating a superuser</h2>
+<p>We will create a superuser who will be the admin of our Django-admin platform.</p>
+<p>To keep matters simple, we shall use the same credentials as those in our <code>sanitation/</code> project.</p>
+<pre><code>python manage.py createsuperuser
+</code></pre><p>You will be prompted for a username, email and password.</p>
+<pre><code>Username (leave blank to use &apos;sammigachuhi&apos;): &lt;your-username&gt;
+Email address: &lt;your-email&gt;
+Password: 
+Password (again):
+</code></pre><p>If the response you get after inserting your credentials is <code>Superuser created successfully.</code>, then you&apos;re good to go.</p>
+<p>Run our Geodjango server via <code>python3 manage.py runserver</code> and head to <code>http://127.0.0.1:8000/admin/</code>. Check if you can sign in using the username and password your provided above. </p>
+<p>If all is well, it should take you to the Django-admin page below.</p>
+<p><img src="images/geodjango-admin.PNG" alt="Admin page of our Geodjango project"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="16-creating-geodjang-project.md" class="navigation navigation-prev " aria-label="Previous page: Chapter 16: Geodjango">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="18-geodjango-model.html" class="navigation navigation-next " aria-label="Next page: Chapter 18: Geodjango model">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 17: Configuring Geodjango","level":"1.19","depth":1,"next":{"title":"Chapter 18: Geodjango model","level":"1.20","depth":1,"path":"18-geodjango-model.md","ref":"18-geodjango-model.md","articles":[]},"previous":{"title":"Chapter 16: Geodjango","level":"1.18","depth":1,"path":"16-creating-geodjang-project.md","ref":"16-creating-geodjang-project.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"17-geodjango-essentials.md","mtime":"2025-06-25T18:05:26.451Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:57:34.130Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

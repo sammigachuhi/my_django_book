@@ -1,0 +1,587 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 12: Foreign keys · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13-adding-images.html" />
+    
+    
+    <link rel="prev" href="11-django-admin-changes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 12: Foreign keys</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-12-foreign-keys">Chapter 12: Foreign keys</h1>
+<h2 id="what-is-a-foreign-key">What is a foreign key?</h2>
+<p>A <a href="https://www.freecodecamp.org/news/how-to-use-a-foreign-key-in-django/" target="_blank">foreign key</a> in Django is a field in your table that is used to link two tables together. Think of it as a field that enables a <em>many-to-one</em> relationship where a single author can have multiple books, a single customer can shop various items and a single blog can have many comments. A foreign key is what will be used to link a single row to several records and vice versa. </p>
+<p>We already have a model that collects basic information: <code>survey_date</code>, <code>survey_time</code>, <code>territory</code>, and <code>area</code>. We would like to go a step further. The original idea was to create a dynamic choices list where we would have multiple-select question. This would then be followed up by a second single-select question whose values would be dependent on the choice value in the preceding question. However, that proved tricky as explained in this <a href="https://stackoverflow.com/questions/24431827/django-model-choice-field-depend-on-other-fields-choice" target="_blank">stack exchange</a>. Nevertheless, we proceeded with the idea of Foreign keys as it is an important topic in Django.</p>
+<h2 id="modify-the-models">Modify the models</h2>
+<p>In our <code>models.py</code> file, we would like to create the model that will be used to select all the team members that were part of the interviewing team. </p>
+<p>Let&apos;s do so:</p>
+<pre><code>from django.db import models
+from datetime import date
+from django.utils import timezone
+
+# Create your models here.
+class Researcher(models.Model):
+
+    RESEARCHERS_LIST = {
+        &quot;Bwana_Waziri&quot;: &quot;Bwana Waziri&quot;,
+        &quot;Samuel_Gachuhi&quot;: &quot;Samuel Gachuhi&quot;,
+        &quot;Jane_Otieno&quot;: &quot;Jane Otieno&quot;,
+        &quot;Janet_Awino&quot;: &quot;Janet Awino&quot;,
+        &quot;William_Kinyanjui&quot;: &quot;William Kinyanjui&quot;,
+        &quot;Johnson_Ngugi&quot;: &quot;Johnson Ngugi&quot;
+    }
+
+    researchers = models.CharField(choices=RESEARCHERS_LIST, default=&quot;Bwana_Waziri&quot;)
+
+    def __str__(self):
+        return self.researchers
+</code></pre><p>In the above, we define a dictionary called <code>RESEARCHERS_LIST</code> that will contain names of our field members. </p>
+<p>We also pass a <code>def __str__(self)</code>. This function is used to return the name of the value to be rendered on the admin, and not something like <code>Researcher object (1)</code> as shown below.</p>
+<p><img src="images/object_name.PNG" alt="Object name"></p>
+<p>For the <strong>Questionnaire</strong> model, we add the following lines:</p>
+<pre><code>recorder = models.ForeignKey(Researcher, on_delete=models.CASCADE,)
+
+    def __str__(self):
+        return f&quot;Date: {self.survey_date} Recorder: {self.recorder}&quot;
+</code></pre><p>The above does the following:</p>
+<ol>
+<li>The <code>recorder</code> variable is a ForeignKey object. The <code>models.ForeignKey</code> takes at least two parameters: the model to refer from and the <code>on_delete</code> option. Here, we define the reference model as <code>Researcher</code> and the <code>on_delete</code> as <code>models.CASCADE</code>. On the latter, the <code>models.CASCADE</code> option sets the model to always delete the recorder name if that parent researcher object has also been deleted. In other words, it <em>cascades</em> the effects. </li>
+</ol>
+<p>We also define a <code>def __string__(self)</code> here which will show on the Django admin webpage the date at which the questionnaire was filled and by which recorder.</p>
+<h2 id="register-models">Register models</h2>
+<p>Since we had a created a new <code>Researcher</code> model, we will have to add it to the <code>admin.py</code> page. The <code>admin.py</code> is used to display our models in the Django website. </p>
+<p>Let&apos;s add our <code>Researcher</code> model in the <code>admin.py</code> file. Notice that we first call it before registering, otherwise Django won&apos;t know it is there. </p>
+<pre><code>from django.contrib import admin
+from .models import Researcher
+from .models import Questionnaire
+</code></pre><p>Now let&apos;s add the <code>Researcher</code> model.</p>
+<pre><code>class ResearchersAdmin(admin.ModelAdmin):
+
+    fields = (&quot;researchers&quot;,)
+</code></pre><p>Now let&apos;s finally register the model.</p>
+<pre><code>admin.site.register(Researcher, ResearchersAdmin)
+</code></pre><h2 id="migrate">Migrate</h2>
+<p>To keep a record of all the changes we&apos;ve made to our models, run:</p>
+<pre><code>python3 manage.py makemigrations australia
+</code></pre><p>The last part, <code>australia</code> species we will only snapshot the migrations to the model(s) in our <code>australia</code> app.</p>
+<p>Then let implement the changes in the database:</p>
+<pre><code>python3 manage.py  migrate australia
+</code></pre><p>You will see a new message related to updating missing fields. Just go with the first option of <code>1)</code> in all cases. </p>
+<p>Thereafter, run <code>python3 manage.py runserver</code>. Go to the localhost <code>http://127.0.0.1:8000/admin</code> for all matters admin.</p>
+<p>The interface should be self-explanatory. Add a <code>Researcher</code> variable 
+by using the buttons with the <code>+</code> sign.</p>
+<p><img src="images/add_researchers.PNG" alt="Add researcher"></p>
+<p>Once you&apos;ve added another researcher from the dropdown, hit <code>SAVE</code>.</p>
+<p><img src="images/added_researcher.PNG" alt="Added researcher"></p>
+<p>Add a couple of more recorders.</p>
+<p>Create a new Questionnaire by clicking the button with <strong>ADD QUESTIONNAIRE +</strong>. </p>
+<p>The previous questions of <em>Survey date</em>, <em>Survey time</em>, <em>Territory</em> and <em>Area</em> will be there. But you will also see the <code>Recorder</code> dropdown which upon clicking will display the names of all the added <code>Researchers</code>. </p>
+<p><img src="images/foreign_keys.PNG" alt="Foreign keys"></p>
+<p>Select one of the researchers from the dropdown and hit <strong>SAVE</strong>. </p>
+<p><img src="images/date_recorder.PNG" alt="Date and recorder"></p>
+<p>The record will be saved and displayed on the <strong>Questionnaires</strong> webpage.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11-django-admin-changes.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 11: Modifications in Django admin">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13-adding-images.html" class="navigation navigation-next " aria-label="Next page: Chapter 13: Images in Django">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 12: Foreign keys","level":"1.14","depth":1,"next":{"title":"Chapter 13: Images in Django","level":"1.15","depth":1,"path":"13-adding-images.md","ref":"13-adding-images.md","articles":[]},"previous":{"title":"Chapter 11: Modifications in Django admin","level":"1.13","depth":1,"path":"11-django-admin-changes.md","ref":"11-django-admin-changes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"12-model-modifications.md","mtime":"2025-06-20T17:32:56.678Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:57:34.130Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
