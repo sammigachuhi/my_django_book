@@ -1,0 +1,17 @@
+
+
+{
+  "name": "my_django_book",
+  "version": "1.0.0",
+  "description": "This book was intended to be a tutorial on how you would get basics of Django while building a very simple app.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gitbook build",
+    "deploy": "gh-pages -d _book"
+  },
+  "author": "Samuel Gachuhi",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
