@@ -1,0 +1,566 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 10: Django admin · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11-django-admin-changes.html" />
+    
+    
+    <link rel="prev" href="09-creating-models.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 10: Django admin</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-10-django-admin">Chapter 10: Django admin</h1>
+<h2 id="what-is-the-django-admin">What is the Django admin?</h2>
+<p>Right after creating your models, creating the Django admin is the next step. But before we jump ahead of the gun, what exactly is Django Admin? </p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Django/Admin_site" target="_blank">Django admin</a> is an interface that allows developers to manage their projects. That is create, view, update and remove records from their applications. The Django Admin tool is very useful in that it can be the best playground to test whether your models are collecting the right data. Although it is effective on this, it is not the best tool to use if your intend to grow the customer base of your app. Not many people will appreciate this interface and it is recommended to integrate your app with a more sophisticated one. </p>
+<h2 id="create-super-user">Create super user</h2>
+<p>As the creator of your project, you will need to have a <em>super</em> account. This is an account that has all permissions. </p>
+<p>To create your superuser account, go to your project level and type:</p>
+<pre><code>python3 manage.py createsuperuser
+</code></pre><p>You will be prompted to enter a username, email and a password. When entering the password, don&apos;t panic if you can&apos;t see what you&apos;re typing. It is by design. </p>
+<pre><code>
+Username (leave blank to use &apos;sammigachuhi&apos;): &lt;your-username&gt;
+Email address: &lt;optional-email-address&gt;
+Password: 
+Password (again): 
+Superuser created successfully.
+</code></pre><p>Once you add yourself as the superuser, Django will add your credentials to the database as well.</p>
+<h2 id="test-login">Test login</h2>
+<p>To check whether you&apos;ve been able to successfully create a superuser, restart the server.</p>
+<p>Of course the server will by default route to this url: <code>http://127.0.0.1:8000/</code>. However, add <code>admin</code> at the end so that it is: <code>http://127.0.0.1:8000/admin</code>. </p>
+<p>Django will take you to a login page like below. </p>
+<p><img src="images/django_admin_login.PNG" alt="Django admin login page"></p>
+<p>Now login using the credentials you provided when creating the superuser account. </p>
+<p>You will be taken to a new site like below.</p>
+<p><img src="images/djang_admin_website.PNG" alt="Django admin website"></p>
+<p>If you click on the <strong>Users</strong> link, it will open a new interface which shows the users who currently have access to the Django admin site. You as the superuser are definitely one of them.</p>
+<p><img src="images/django_users.PNG" alt="Django users"></p>
+<p>If you add other users into the Django admin site, their credentials will also appear here.</p>
+<p>However, we can&apos;t see the models of our <code>sanitation</code> project anywhere. </p>
+<p>Let&apos;s add them.</p>
+<p>First, go to your <code>australia/admin.py</code> file.</p>
+<p>Then import the model(s) you created. We use <code>.models</code> because we are importing <code>models.py</code> from within the same folder thus the use of the dot (.) before.</p>
+<pre><code>from django.contrib import admin
+from .models import Questionnaire
+</code></pre><p>Register your model. </p>
+<pre><code># Register your models here.
+class QuestionnaireAdmin(admin.ModelAdmin):
+    pass 
+
+admin.site.register(Questionnaire, QuestionnaireAdmin)
+</code></pre><p>The <code>admin.site.register()</code> function registers our models in the Django Admin interface from whence we can perform our <em>Create, Update and Delete (CRUD)</em> functions.</p>
+<p>The ModelAdmin class will be a representation of our model in the Django Admin interface. If you refresh your browser, you will see our <strong>Questionnaire</strong> model appear under the name of our application --<code>Australia</code>. </p>
+<p><img src="images/django_models.PNG" alt="Django models in Admin site"></p>
+<p>If you click on the <strong>Questionnaire</strong> model, you will see a list of our the two Questionnaires we created earlier in Django shell. </p>
+<p><img src="images/django_models_listed.PNG" alt="Django models listed"></p>
+<p>When you click on one of them, you will see the responses that we put in via Django shell. However, curiously, our <code>survey_date</code> and <code>survey_time</code> responses are missing. </p>
+<p><img src="images/django_model_responses.PNG" alt="Django model responses"></p>
+<p>All in all, using the Django admin is easier than Django shell, unless you are the type who prefers writing their birthdays in cron syntax!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="09-creating-models.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 09: A model">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11-django-admin-changes.html" class="navigation navigation-next " aria-label="Next page: Chapter 11: Modifications in Django admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 10: Django admin","level":"1.12","depth":1,"next":{"title":"Chapter 11: Modifications in Django admin","level":"1.13","depth":1,"path":"11-django-admin-changes.md","ref":"11-django-admin-changes.md","articles":[]},"previous":{"title":"Chapter 09: A model","level":"1.11","depth":1,"path":"09-creating-models.md","ref":"09-creating-models.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"10-django-admin.md","mtime":"2025-06-19T17:54:06.428Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:24:15.522Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

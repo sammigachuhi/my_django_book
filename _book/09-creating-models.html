@@ -1,0 +1,766 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 09: A model · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-django-admin.html" />
+    
+    
+    <link rel="prev" href="08-another-app.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 09: A model</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-09-a-model">Chapter 09: A model</h1>
+<h2 id="what-is-a-model-in-django">What is a model in Django?</h2>
+<p>A <a href="https://www.geeksforgeeks.org/django-models/" target="_blank">Django model</a> is a built-in feature that Django uses to create tables, their fields and various constraints. In short, a Django model is the SQL Database one uses with Django. </p>
+<p>The basics of a model include: </p>
+<ul>
+<li><p>Each model is a Python class that subclasses <code>django.db.models.Model</code> </p>
+</li>
+<li><p>Each attribute of the model represents a database field. </p>
+</li>
+</ul>
+<h2 id="how-to-create-models-in-django">How to create models in Django?</h2>
+<p>In Django, models are defined inside a <code>models.py</code> script. </p>
+<p>We want to start simple. We want to assume that we want to create a database that for starters, captures the following information:</p>
+<ul>
+<li><p><code>survey_date</code> - the date at which the survey was undertaken </p>
+</li>
+<li><p><code>survey_time</code> - the time at which the survey was undertaken </p>
+</li>
+<li><p><code>territory</code> - the administrative region at which the survey was undertaken </p>
+</li>
+<li><p><code>area</code> - the state, town or neighbourhood the survey was carried out. Let&apos;s keep it very simple </p>
+</li>
+</ul>
+<h2 id="creating-the-class">Creating the class</h2>
+<p>Models in Django are created under classes. We will create a class called <code>Questionnaire</code> which we shall use to create the model we want. </p>
+<pre><code># Create your models here.
+class Questionnaire(models.Model):
+</code></pre><p>We would like our first field to have a dropdown of the Australian territories. Therefore, within the <code>Questionnaire</code> class we create a list of constants:</p>
+<pre><code>class Questionnaire(models.Model):
+
+    WA = &quot;Western_Australia&quot;
+    NT = &quot;Northern_Territory&quot;
+    QD = &quot;Queensland&quot;
+    SA = &quot;Southern_Australia&quot;
+    NSW = &quot;New_South_Wales&quot;
+    TA = &quot;Tasmania&quot;
+</code></pre><p>Now, let&apos;s create our proper territories list:</p>
+<pre><code>class Questionnaire(models.Model):
+
+    WA = &quot;Western_Australia&quot;
+    NT = &quot;Northern_Territory&quot;
+    QD = &quot;Queensland&quot;
+    SA = &quot;Southern_Australia&quot;
+    NSW = &quot;New_South_Wales&quot;
+    TA = &quot;Tasmania&quot;
+
+    TERRITORY_CHOICES = [
+        (WA, &quot;Western Australia&quot;),
+        (NT, &quot;Northern Territory&quot;),
+        (QD, &quot;Queensland&quot;),
+        (SA, &quot;Southern Australia&quot;),
+        (NSW, &quot;New South Wales&quot;),
+        (TA, &quot;Tasmania&quot;)
+    ]
+</code></pre><p>Why did we start with the list of constants? This is because we want the choices to be those that can be referenced in case we import the model inside another class.  </p>
+<p>Now let&apos;s create the <code>territory</code> field which will contain our territory choices. </p>
+<pre><code>    territory = models.CharField(
+        choices=TERRITORY_CHOICES,
+        default=WA
+    )
+</code></pre><p>Note that the <code>choices</code> parameter references the lists referenced by <code>TERRITORY_CHOICES</code>. </p>
+<p>Let&apos;s add a textfield in which the respondent will manually type out the area that they reside in.</p>
+<pre><code>area = models.TextField()
+</code></pre><p>Just before the <code>territory</code> field, let&apos;s add <code>survey_date</code> and <code>survey_time</code> fields. We shall set the <code>auto_add_now</code> parameter to <code>True</code> so that the model automatically captures the current day and time respectively. So here is our <code>Questionnaire</code> class so far.</p>
+<pre><code># Create your models here.
+class Questionnaire(models.Model):
+
+    WA = &quot;Western_Australia&quot;
+    NT = &quot;Northern_Territory&quot;
+    QD = &quot;Queensland&quot;
+    SA = &quot;Southern_Australia&quot;
+    NSW = &quot;New_South_Wales&quot;
+    TA = &quot;Tasmania&quot;
+
+    TERRITORY_CHOICES = [
+        (WA, &quot;Western Australia&quot;),
+        (NT, &quot;Northern Territory&quot;),
+        (QD, &quot;Queensland&quot;),
+        (SA, &quot;Southern Australia&quot;),
+        (NSW, &quot;New South Wales&quot;),
+        (TA, &quot;Tasmania&quot;)
+    ]
+
+    survey_date = models.DateField(auto_now_add=True)
+
+    survey_time = models.TimeField(auto_now_add=True)
+
+    territory = models.CharField(
+        choices=TERRITORY_CHOICES,
+        default=WA
+    )
+
+    area = models.TextField()
+</code></pre><h2 id="migrate-the-model">Migrate the model</h2>
+<p>Now that you have created your model and updated it, it is time to migrate the model in Django. Why are we doing this? Initially, our <code>australia/models.py</code> file was empty apart from the first line of <code>from django.db import models</code> which imports the <code>models</code> package. Since we have created and updated a new model, we have to generate migration files that capture the changes in a human-readable format. Furthermore, we will specify in which app to generate the migration files for, that is the <code>australia</code> app.</p>
+<pre><code>python3 manage.py makemigrations australia
+</code></pre><p>If you run the <code>makemigrations</code> command without the <code>australia</code> flag, it will run migrations for the entire project, which is <em>ideally</em> not what we want. </p>
+<p>Running this command creates a database called <code>db.sqlite3</code> within our project folder. </p>
+<pre><code>sanitation
+&#x251C;&#x2500;&#x2500; db.sqlite3
+</code></pre><p>The migration files are stored in our app&apos;s <code>migrations</code> directory. </p>
+<p>Now that the changes have been captured, how we do we apply them into our database? The changes recorded in the migration files are captured using the <code>migrate</code> command. Again, we specified that we only wanted to apply the changes for the <code>australia</code> app.</p>
+<pre><code>python3 manage.py migrate australia
+</code></pre><h2 id="django-shell">Django shell</h2>
+<p>To create instances of our <code>Questionnaire</code> class, we will use Django shell. This is a scripting language much like Python shell which enables us to access the sqlite database. To start using the Django shell interface, type:</p>
+<pre><code>python manage.py shell
+</code></pre><p>You will know you are inside the Django shell when you see three carets (<code>&gt;&gt;&gt;</code>).</p>
+<p>First import the <code>Questionnaire</code> model.</p>
+<pre><code>from australia.models import Questionnaire
+</code></pre><p>Let&apos;s create an instance of our first questionnaire and fill some values. </p>
+<pre><code>first_questionnaire = Questionnaire(
+... territory=&quot;Tasmania&quot;,
+... area=&quot;area1&quot;
+... )
+</code></pre><p>Thereafter, save this instance into your database using <code>first_questionnaire.save()</code>. This creates a new entry into our Questionnaire table and into our database. </p>
+<p>Let&apos;s create a second instance. </p>
+<pre><code>second_questionnaire = Questionnaire(
+... territory=&quot;Queensland&quot;,
+... area=&quot;area2&quot;
+... )
+</code></pre><p>Now save it into the database.</p>
+<pre><code>second_questionnaire.save()
+</code></pre><p>To exit the Django shell, type <code>exit()</code>. </p>
+<h2 id="create-the-views">Create the views</h2>
+<p>We want to create the views that will be used in designing our multiple page app. We want our <code>australia</code> app to have two web pages. One is for showing the total questionnaires that have been filled while the second will go into detail at what has been filled into each questionnaire. </p>
+<p>Let&apos;s start with the first web page that provides a general overview of the responses. We shall name this webpage <code>questionnaires</code>. </p>
+<p>You will first import the <code>Questionnaire</code> model at the top of your <code>australia/views.py</code></p>
+<pre><code>from australia.models import Questionnaire
+</code></pre><p>Here is the view:</p>
+<pre><code>def questionnaire_index(request):
+    questionnaires = Questionnaire.objects.all()
+    context = {
+        &quot;questionnaires&quot;: questionnaires
+    }
+    return render(request, &quot;australia/questionnaires.html&quot;, context)
+</code></pre><p>Let&apos;s go over the above code block. </p>
+<p><code>def questionnaire_index()</code> - this is the function name we shall use to create the function that will retrieve the project details. </p>
+<p><code>questionnaires = Questionnaire.objects.all()</code> - this retrieves all values from the <code>Questionnaire</code> table. </p>
+<p><code>context = {...}</code> - this is a dictionary that stores all values retrieved by the <code>questionnaires</code> variable. When <code>context</code> is passed into the <code>render()</code> function, it provides all the retrieved values to the template. </p>
+<p>We also want to have a webpage which will provide further details when a template is clicked. For example, say I click the template for the first questionnaire. This will open another webpage that shows additional contents of the responses collected by the first questionnaire. </p>
+<p>Let&apos;s create the function called <code>questionnaire_details</code> for showing additional details of the responses. </p>
+<pre><code>def questionnaire_detail(request, pk):
+    questionnaire = Questionnaire.objects.get(pk=pk)
+    context = {
+        &quot;questionnaire&quot;: questionnaire
+    }
+    return render(request, &quot;australia/questionnaire_detail.html&quot;, context)
+</code></pre><p>Most of the components in this function are similar to those in the <code>questionnaire_index</code> function. However, inside the parentheses of the function name we can see a <code>pk</code> parameter. In Django, the <code>pk</code> parameter refers to the primary key of every record in your database. This primary key is provided by Django automatically, and is an auto-incrementing integer that progressively increases in the order of 1, 2, 3 and so on. You can access any record in your Django database by using this <code>pk</code> notation.</p>
+<p>Since the primary key (<code>pk</code>) we are using is the default provided by Django, we pass it to the <code>questionnaire</code> variable as <code>pk=pk</code> inside <code>Questionnaire.objects.get()</code>.</p>
+<h2 id="create-the-templates">Create the templates</h2>
+<p>Now that we&apos;ve created the views, it&apos;s time we create the templates that will show what is defined by the views. Inside the <code>templates/australia</code>, create two new templates, <code>questionnaires.html</code> and <code>questionnaire_detail.html</code>. </p>
+<p>Inside the <code>questionnaires.html</code> insert the following code. </p>
+<pre><code>{% extends &quot;base.html&quot; %}
+
+
+{% block base_content %}
+
+&lt;h1&gt; Questionnaires &lt;/h1&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    {% for question in questionnaires %}
+
+    &lt;div class=&quot;col-md-4&quot;&gt;
+
+        &lt;div class=&quot;card mb-2&quot;&gt;
+
+            &lt;div class=&quot;card-body&quot;&gt;
+
+                &lt;h5 class=&quot;card-title&quot;&gt;{{ question.territory }}&lt;/h5&gt;
+
+                &lt;p class=&quot;card-text&quot;&gt;{{ question.area }}&lt;/p&gt;
+
+                &lt;a href=&quot;{% url &apos;questionnaire_detail&apos; question.pk %}&quot;
+
+                   class=&quot;btn btn-primary&quot;&gt;
+
+                    See response
+
+                &lt;/a&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    {% endfor %}
+
+&lt;/div&gt;
+
+
+{% endblock base_content %}
+</code></pre><p>As mentioned in <a href="05-base-template.html#creating-a-basehtml-file">Chapter 5</a>, the <code>{% extends &quot;base.html&quot; %}</code> copies the base template we defined in the <code>templates</code> folder at project level. The <code>{% block base_content %} {% endblock base_content %}</code> simply copies the Bootstrap template in our <code>base.html</code> and whatever is encapsulated within its block inherits the bootstrap theme found in <code>base.html</code>. </p>
+<p>However, we also introduce something else; a <a href="https://jinja.palletsprojects.com/en/stable/" target="_blank">jinja</a> <code>for</code> loop. The <code>{% for question in questionnaires %} {% endfor %}</code>. This is similar to a python <code>for</code> loop only that it is written in jinja syntax. The <code>{% endfor %}</code> breaks out of the loop. </p>
+<p>Inside this <code>for</code> loop we find the <code>{{ question.territory }}</code> and <code>{{ question.area }}</code> jinja tags. They stand for each value looped by the <code>{% for question in questionnaires %}</code> which references the <code>questionnaires</code> variable in <code>questionnaires = Questionnaire.objects.all()</code> of the <code>Questionnaire</code> class. </p>
+<p>Therefore, in essence the <code>for</code> loop will display all information filled on the <code>territory</code> and <code>area</code> field for each round of survey.</p>
+<p>Finally, we have the <code>&lt;a&gt;&lt;/a&gt;</code> tag containing the <code>&quot;{% url &apos;questionnaire_detail&apos; question.pk %}&quot;</code> url reference. The <code>&lt;a&gt;&lt;/a&gt;</code> creates links and in this case it creates a button called <code>See response</code>. Clicking on this button will take us to the <code>questionnaire_detail.html</code> that contains more information on the response that was filled in.</p>
+<p>The template of <code>questionnaire_detail.html</code> looks below.</p>
+<pre><code>{% extends &quot;base.html&quot; %}
+
+{% block base_content %}
+
+&lt;h1&gt; Date of the survey &lt;/h1&gt;
+&lt;h5&gt; {{ questionnaire.survey_date }} &lt;/h5&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+
+        &lt;br&gt;
+        &lt;h5&gt;Time of the survey&lt;/h5&gt;
+        &lt;p&gt; {{ questionnaire.survey_time }}&lt;/p&gt;
+        &lt;br&gt;
+        &lt;h5&gt;Residence of the respondent:&lt;/h5&gt;
+        &lt;p&gt;{{ questionnaire.area }}&lt;/p&gt;
+        &lt;br&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+{% endblock base_content %}
+</code></pre><p>The template is very similar to the <code>questionnaires.html</code> webpage. In this case, however, it will reference the <code>questionnaire</code> variable which is in the <code>questionnaire_detail</code> function of our <code>australia/views.py</code>. Django will use the primary key of the item clicked inside <code>questionnaires.html</code> to display more data, in this case <code>survey_date</code> and <code>survey_time</code> inside a different webpage called <code>questionnaire_detail.html</code>. In other words, the <code>survey_date</code>, <code>survey_time</code> and <code>area</code> of the item clicked in <code>questionnaires.html</code> will show up in the <code>questionnaire_detail.html</code> webpage. This url of this additional data will be <code>http://127.0.0.1:8000/australia/questionnaires/&lt;primary_key&gt;/</code>.</p>
+<h2 id="add-the-routes">Add the routes</h2>
+<p>The routes are the urls which will be used to access your webpage(s). Create a <code>australia/urls.py</code> file that will contain your urls. First of all, you will import your views.</p>
+<pre><code>from australia import views
+</code></pre><p>Importing the views inside <code>australia/views.py</code> will enable us to get the python functions which define the content that gets shown in our templates as methods. For example, below we access the <code>questionnaire_index</code> and <code>questionnaire_detail</code> functions as methods via <code>views.questionnaire_index</code> and <code>views.questionnaire_detail</code>. </p>
+<pre><code>urlpatterns = [
+    path(&quot;&quot;, views.home, name=&quot;home&quot;),
+    path(&quot;sanitation&quot;, views.sanitation, name=&quot;sanitation&quot;),
+    path(&quot;questionnaires&quot;, views.questionnaire_index, name=&quot;questionnaires&quot;),
+    path(&quot;questionnaires/&lt;int:pk&gt;/&quot;, views.questionnaire_detail, name=&quot;questionnaire_detail&quot;),
+]
+</code></pre><p>The <code>&lt;int:pk&gt;</code> stands for the integer for the primary key in focus, which is ultimately a particular response.</p>
+<p>Now that we have added the urls inside our <code>australia</code> app, it is time we also inform our project app, -- <code>sanitation</code> app that there is a new urls file inside the <code>australia</code> app.</p>
+<p>In your <code>sanitation/urls.py</code> file add the path to your <code>australia/urls.py</code> file as shown below.</p>
+<pre><code>urlpatterns = [
+    path(&quot;&quot;, views.home, name=&quot;home&quot;),
+    path(&quot;sanitation&quot;, views.sanitation, name=&quot;sanitation&quot;),
+    path(&quot;questionnaires&quot;, views.questionnaire_index, name=&quot;questionnaires&quot;),
+    path(&quot;questionnaires/&lt;int:pk&gt;/&quot;, views.questionnaire_detail, name=&quot;questionnaire_detail&quot;),
+]
+</code></pre><p>Thereafter, run <code>python3 manage.py runserver</code>. Go to the <code>http://127.0.0.1:8000/questionnaires</code> url. Notice the last bit, <code>questionnaires</code> corresponds to the route name defined in the <code>path()</code> function inside our <code>australia/urls.py</code> file.</p>
+<pre><code>path(&quot;questionnaires&quot;, ...),
+</code></pre><p><img src="images/questionnaires.PNG" alt="Questionnaires webpage"></p>
+<p>Click on the <em>See response</em>, it opens a new webpage with the primary number of the response. For example <code>http://127.0.0.1:8000/australia/questionnaires/1/</code>. Again, this path corresponds to the route name we defined in the <code>path()</code> function found in <code>australia/urls.py</code> file. </p>
+<pre><code>path(&quot;questionnaires/&lt;int:pk&gt;/&quot;, ...),
+</code></pre><p><img src="images/questionnaire.PNG" alt="Primary key"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-another-app.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 8: Another Django app">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-django-admin.html" class="navigation navigation-next " aria-label="Next page: Chapter 10: Django admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 09: A model","level":"1.11","depth":1,"next":{"title":"Chapter 10: Django admin","level":"1.12","depth":1,"path":"10-django-admin.md","ref":"10-django-admin.md","articles":[]},"previous":{"title":"Chapter 8: Another Django app","level":"1.10","depth":1,"path":"08-another-app.md","ref":"08-another-app.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"09-creating-models.md","mtime":"2025-06-19T17:53:50.938Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:24:15.522Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

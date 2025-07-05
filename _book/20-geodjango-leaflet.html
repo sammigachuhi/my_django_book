@@ -1,0 +1,703 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 20: Django leaflet · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="21-render-geodjango.html" />
+    
+    
+    <link rel="prev" href="19-geodjango-homepage.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 20: Django leaflet</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-20-django-leaflet">Chapter 20: Django leaflet</h1>
+<h2 id="what-is-leaflet">What is Leaflet?</h2>
+<p><a href="https://leafletjs.com/" target="_blank">Leaflet</a> is the leading JavaScript library for mobile-friendly interactive webmaps. Leaflet can also be integrated in Django and this gives rise to the term <code>django-leaflet</code>.</p>
+<p>The goal of this chapter is to create a template that shows the points we clicked on the map when providing responses to our django admin page. </p>
+<h2 id="installing-leaflet">Installing Leaflet</h2>
+<p>To install Leaflet, ensure that your virtual environment is active and run:</p>
+<pre><code>pip install django-leaflet
+</code></pre><h2 id="configure-the-settings">Configure the settings</h2>
+<p>Add <code>leaflet</code> and <code>django-geojson</code> to your list of <code>INSTALLED_APPS</code>.</p>
+<pre><code>INSTALLED_APPS = [
+    # my apps
+    &apos;geolocations&apos;,
+    &apos;django.contrib.gis&apos;,
+    &apos;leaflet&apos;,
+    #
+    &apos;django.contrib.admin&apos;,
+    &apos;django.contrib.auth&apos;,
+    &apos;django.contrib.contenttypes&apos;,
+    &apos;django.contrib.sessions&apos;,
+    &apos;django.contrib.messages&apos;,
+    &apos;django.contrib.staticfiles&apos;,
+]
+</code></pre><h2 id="configure-templates">Configure templates</h2>
+<p>We want a webmap to appear when the user clicks on a link in the <code>responses.html</code> file. </p>
+<p>Right under the <code>&lt;p&gt;&lt;/p&gt;</code> tags of <em>Crops grown:</em> value, insert the following <code>&lt;a&gt;&lt;/a&gt;</code> tag. </p>
+<pre><code>&lt;a href=&quot;{% url &apos;locations&apos; response.pk %}&quot;
+
+                   class=&quot;btn btn-primary&quot;&gt;
+
+                    See location
+
+                &lt;/a&gt;
+</code></pre><p>Additionally, add two breaklines via <code>&lt;br&gt;</code> to space out between the button and the images we added.</p>
+<pre><code>&lt;br&gt;
+&lt;br&gt;
+</code></pre><p>Now, let&apos;s create a new template called <code>locations.html</code>. We want this template to display the respondent&apos;s name, show their location and comments. </p>
+<p>Create a <code>locations.html</code> within the <code>templates/geolocations</code> folder. Your directory structure should look like below.</p>
+<pre><code>geolocations
+&#x251C;&#x2500;&#x2500; apps.py
+&#x251C;&#x2500;&#x2500; templates
+&#x2502;   &#x2514;&#x2500;&#x2500; geolocations
+&#x2502;       &#x251C;&#x2500;&#x2500; index.html
+&#x2502;       &#x251C;&#x2500;&#x2500; locations.html
+&#x2502;       &#x2514;&#x2500;&#x2500; responses.html
+</code></pre><p>Inside the <code>locations.html</code>, paste the below content. </p>
+<pre><code>
+{% extends &quot;base.html&quot; %}
+
+{% load leaflet_tags %}
+
+{% block base_content %}
+
+&lt;h1&gt; Locations &lt;/h1&gt;
+&lt;h5&gt; {{ response.names }} &lt;/h5&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+
+        &lt;br&gt;
+        &lt;h5&gt; Location of responder&apos;s farm &lt;/h5&gt;
+        &lt;p&gt; {{ response.location }}&lt;/p&gt;
+        &lt;br&gt;
+        &lt;h5&gt; Comments of the respondent: &lt;/h5&gt;
+        &lt;p&gt;{{ response.comments }}&lt;/p&gt;
+        &lt;br&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+    {% leaflet_map &quot;main&quot; callback=&quot;map_init&quot; %}
+&lt;/div&gt;
+
+{# Place Leaflet CSS and JS *before* your custom script that uses L #}
+{% leaflet_css %}
+{% leaflet_js %}
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    // IMPORTANT: Set the path for Leaflet&apos;s default marker icons
+    // This often fixes the &apos;marker not showing&apos; issue if images aren&apos;t found.
+    // Ensure the version (e.g., 1.9.4) matches what django-leaflet loads.
+    L.Icon.Default.imagePath = &apos;https://unpkg.com/leaflet@1.9.4/dist/images/&apos;;
+
+    function map_init(map, options) {
+        // Get point coordinates. They will be strings from the template.
+        // Leaflet will usually convert numeric strings to numbers.
+        var lon = &quot;{{ response.location.x }}&quot;; // Access x directly if it&apos;s a PointField
+        var lat = &quot;{{ response.location.y }}&quot;; // Access y directly if it&apos;s a PointField
+
+        console.log(&quot;Map Init: Received Lat:&quot;, lat, &quot;Lon:&quot;, lon); // Debugging: Check values
+
+        // Convert to numbers if needed (optional, but good practice)
+        var latNum = parseFloat(lat);
+        var lonNum = parseFloat(lon);
+
+        // Check if coordinates are valid numbers
+        if (isNaN(latNum) || isNaN(lonNum)) {
+            console.error(&quot;Invalid coordinates received for map: Lat=&quot;, lat, &quot;Lon=&quot;, lon);
+            map.setView([0, 0], 2); // Fallback to a default view
+            return; // Exit if coordinates are bad
+        }
+
+        // Set the map view to the coordinates and a suitable zoom level
+        // Leaflet&apos;s setView expects [latitude, longitude]
+        map.setView([latNum, lonNum], 15); // Zoom level 15 is usually good for a single point
+
+        // Add the marker to the map
+        // Leaflet&apos;s L.marker expects [latitude, longitude]
+        L.marker([latNum, lonNum]).addTo(map)
+            .bindPopup(&quot;&lt;b&gt;{{ response.names }}&lt;/b&gt;&lt;br&gt;{{ response.comments }}&quot;) // Add a popup
+            .openPopup(); // Open the popup by default
+
+        console.log(&quot;Marker added at Lat:&quot;, latNum, &quot;Lon:&quot;, lonNum); // Debugging: Confirm marker added
+    }
+&lt;/script&gt;
+
+{% endblock base_content %}
+</code></pre><h2 id="overview-of-the-template">Overview of the template</h2>
+<p>We first load the <code>base.html</code> of the leaflet_tags and base content block.</p>
+<pre><code>{% extends &quot;base.html&quot; %}
+
+{% load leaflet_tags %}
+
+{% block base_content %}
+</code></pre><p>We then add the content that will be displayed.</p>
+<pre><code>&lt;h1&gt; Locations &lt;/h1&gt;
+&lt;h5&gt; {{ response.names }} &lt;/h5&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+
+        &lt;br&gt;
+        &lt;h5&gt; Location of responder&apos;s farm &lt;/h5&gt;
+        &lt;p&gt; {{ response.location }}&lt;/p&gt;
+        &lt;br&gt;
+        &lt;h5&gt; Comments of the respondent: &lt;/h5&gt;
+        &lt;p&gt;{{ response.comments }}&lt;/p&gt;
+        &lt;br&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>Thereafter, the following line fires up the rendering of our Leaflet map.</p>
+<pre><code>&lt;div&gt;
+    {% leaflet_map &quot;main&quot; callback=&quot;map_init&quot; %}
+&lt;/div&gt;
+</code></pre><p>This is followed by inserting the CSS and JavaScript to be used by Leaflet.</p>
+<pre><code>{% leaflet_css %}
+{% leaflet_js %}
+</code></pre><p>After that comes the <code>script</code> tag. This is what contains the contents that will be rendered on our map. </p>
+<p>We first begin by telling Leaflet where it should find the markers via the following one liner code:</p>
+<pre><code>L.Icon.Default.imagePath = &apos;https://unpkg.com/leaflet@1.9.4/dist/images/&apos;;
+</code></pre><p>We create a <code>map_init</code> function that takes the longitude and latitude values of the location you inserted in your django admin.</p>
+<pre><code>var lon = &quot;{{ response.location.x }}&quot;; // Access x directly if it&apos;s a PointField
+var lat = &quot;{{ response.location.y }}&quot;;
+</code></pre><p>We set the map to a suitable zoom level.</p>
+<pre><code>map.setView([latNum, lonNum], 15);
+</code></pre><p>We finally set up a marker that shows the respondent&apos;s name and comment.</p>
+<pre><code>L.marker([latNum, lonNum]).addTo(map)
+            .bindPopup(&quot;&lt;b&gt;{{ response.names }}&lt;/b&gt;&lt;br&gt;{{ response.comments }}&quot;) // Add a popup
+            .openPopup(); // Open the popup by default
+</code></pre><p>There are other intermediate lines of code that are used for debugging such as the <code>if</code> statement and <code>console.log()</code> at the bottom. See the entire html file in <a href="https://github.com/sammigachuhi/my_geodjango/blob/main/geolocations/templates/geolocations/locations.html" target="_blank">Github</a>.</p>
+<h2 id="configure-the-viewspy-file">Configure the <code>views.py</code> file</h2>
+<p>Let&apos;s add a function that shall display our location on the webmap.</p>
+<pre><code>def locations(request, pk):
+
+    response = Question.objects.get(pk=pk)
+
+    context = {
+        &quot;response&quot;: response,
+    }
+
+    return render(request, &quot;geolocations/locations.html&quot;, context)
+</code></pre><p>The above function relies on the primary key of an object to display the response. This primary key (pk) can be relied on to differientiate which responses are displayed by a particular webpage. You will see this when we configure our <code>urls.py</code> file.</p>
+<h2 id="configure-the-urlspy-file">Configure the <code>urls.py</code> file</h2>
+<p>We shall add the routing to our <code>locations.html</code> template but we shall add a value that shows which response corresponds to the selected map location. </p>
+<pre><code>urlpatterns = [
+    path(&quot;&quot;, views.home, name=&quot;home&quot;), 
+    path(&quot;responses/&quot;, views.responses, name=&quot;responses&quot;),
+    path(&quot;locations/&lt;int:pk&gt;/&quot;, views.locations, name=&quot;locations&quot;),
+]
+</code></pre><p>Now let&apos;s run the server and the <code>http://127.0.0.1:8000/responses/</code> link should look like below.</p>
+<p><img src="images/responses-webpage.PNG" alt="Responses webpage"></p>
+<p>If you click on the <strong>See location</strong> button, it should take you to a webmap showing the point locations that were selected in the admin for that particular respondent.</p>
+<p><img src="images/responses-webmap.PNG" alt="Responses webmap"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="19-geodjango-homepage.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 19: A Geodjango template">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="21-render-geodjango.html" class="navigation navigation-next " aria-label="Next page: Chapter 21: Render a Geodjango app">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 20: Django leaflet","level":"1.22","depth":1,"next":{"title":"Chapter 21: Render a Geodjango app","level":"1.23","depth":1,"path":"21-render-geodjango.md","ref":"21-render-geodjango.md","articles":[]},"previous":{"title":"Chapter 19: A Geodjango template","level":"1.21","depth":1,"path":"19-geodjango-homepage.md","ref":"19-geodjango-homepage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"20-geodjango-leaflet.md","mtime":"2025-07-01T18:38:00.617Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:24:15.522Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,550 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 3: A Django view · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-routes.html" />
+    
+    
+    <link rel="prev" href="02-github.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 3: A Django view</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-3-a-django-view">Chapter 3: A Django view</h1>
+<h2 id="add-the-app">Add the app</h2>
+<p>We add apps inside the <code>settings.py</code> file under the project folder, and in this case <code>sanitation</code> since its the name of our project. Go back to <a href="01-installing.html#chapter-01-installing-django">Chapter 1</a> to refresh your memory on how we created a project and an app directory.</p>
+<p>To include an app in your project, you need to reference to its configuration class at the beginning of the <code>INSTALLED_APPS</code> list in <code>settings</code> file.</p>
+<p>This enables Django know that there is a new app in town.</p>
+<p>In order to display something for our app, we have to create a view.</p>
+<h2 id="create-a-view">Create a view</h2>
+<p>A view in Django is a collection of functions or classes inside the <code>views.py</code> file in an app&apos;s directory. Each function or class handles the logic that the app processes each time the user visits a different URL.</p>
+<p>The <code>views.py</code> file is found under your app&apos;s directory, which is <code>australia</code> in this case.</p>
+<p>Inside the <code>australia/views.py</code> file, insert the following code.</p>
+<pre><code>from django.shortcuts import render
+
+# Create your views here.
+def home(request):
+    return render(request, &quot;australia/home.html&quot;, {})
+</code></pre><p>In this piece of code, you define a <strong>view function</strong> named <code>home()</code>. When you call this function, it&apos;ll render an HTML file named <code>home.html</code>.</p>
+<p><strong>NB</strong>: A view function takes at least one argument, request. The request object is created whenever a page loads, and it contains metadata about the page request.</p>
+<p>Now that you&#x2019;ve created the view function, you need to create the HTML template to display to the user. The <code>render()</code> function looks for HTML templates inside a directory called <code>templates/</code> in your app directory. Since templates of different apps can have the same names, it&#x2019;s also best practice to add a subdirectory with the app&#x2019;s name inside the <code>templates/</code> directory.</p>
+<p>Create the <code>templates/</code> directory, a subdirectory named <code>pages/</code>, and subsequently a file named <code>home.html</code> inside it.</p>
+<p>Once you&#x2019;ve created the template folders and <code>home.html</code>, open the HTML file in your editor and add the following lines of code:</p>
+<p><code>&lt;h1&gt;Australia, welcome&lt;/h1&gt;</code></p>
+<p>For clarity, here is the directory structure of our <code>australia</code> app.</p>
+<pre><code>australia
+&#x251C;&#x2500;&#x2500; apps.py
+&#x251C;&#x2500;&#x2500; templates
+&#x2502;   &#x2514;&#x2500;&#x2500; australia
+&#x2502;       &#x2514;&#x2500;&#x2500; home.html
+&#x251C;&#x2500;&#x2500; views.py
+
+--snip--
+</code></pre><p>Now that you&#x2019;ve created the template that your <code>home()</code> view function expects, you need to tell Django when to serve the view. For this, you need to create a new route to the project.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-github.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 2: A basic overview of Github">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-routes.html" class="navigation navigation-next " aria-label="Next page: Chapter 4: Routes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 3: A Django view","level":"1.5","depth":1,"next":{"title":"Chapter 4: Routes","level":"1.6","depth":1,"path":"04-routes.md","ref":"04-routes.md","articles":[]},"previous":{"title":"Chapter 2: A basic overview of Github","level":"1.4","depth":1,"path":"02-github.md","ref":"02-github.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"03-views.md","mtime":"2025-06-14T08:19:18.327Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:24:15.522Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

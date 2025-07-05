@@ -1,0 +1,564 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 21: Render a Geodjango app · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="20-geodjango-leaflet.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 21: Render a Geodjango app</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-21-render-a-geodjango-app">Chapter 21: Render a Geodjango app</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter shall detail how to host your geodjango application on Render. This may not be the ideal procedure, but hosting will follow one or more of the following steps.</p>
+<p>First, install the <code>gunicon</code>, <code>whitenoise</code> and <code>psycopg2-binary</code> packages. </p>
+<pre><code>pip install gunicorn whitenoise psycopg2-binary
+</code></pre><p>Secondly, update your <code>requirements.txt</code> file as this is what Render will use to host your app.</p>
+<pre><code>pip freeze &gt; requirements.txt
+</code></pre><h2 id="configure-settingspy">Configure <code>settings.py</code></h2>
+<p>At the very top of your <code>settings.py</code> file, ensure the following packages have been called.</p>
+<pre><code>import os
+import dj_database_url
+</code></pre><p>Then, in your <code>DATABASES</code> variable, uncomment the <code>default</code> variable and replace it with this one. </p>
+<pre><code>&apos;default&apos;: dj_database_url.config(
+        default=&apos;sqlite:///db.sqlite3&apos;, # Fallback to SQLite for local development if DATABASE_URL isn&apos;t set
+        conn_max_age=600,
+        # engine=&apos;django.contrib.gis.db.backends.postgis&apos;, # Specify PostGIS engine
+        # Optionally, set this if you want to use a specific URL from env, 
+        # though dj_database_url usually handles this well
+        # conn_health_checks=True, 
+    )
+</code></pre><p>You may indeed be asking why we should replace the former <code>default</code> variable values with what has been provided above. According to some web scroll, the new <code>default</code> variable values are what will ensure our app is hosted on Render. </p>
+<p>Within your <code>settings.py</code> file, ensure that your <code>ALLOWED_HOSTS</code> variable is set to <code>ALLOWED_HOSTS = [&apos;*&apos;]</code>,</p>
+<p>At the bottom of your <code>settings.py</code> file, add the following:</p>
+<pre><code>STATIC_ROOT = os.path.join(BASE_DIR, &apos;staticfiles&apos;)
+STATICFILES_STORAGE = &quot;whitenoise.storage.CompressedManifestStaticFilesStorage&quot;
+</code></pre><h2 id="run-migrations">Run migrations</h2>
+<p>We want the database to get updated with the latest changes. Therefore, first run <code>python3 manage.py makemigrations</code> and thereafter, <code>python3 manage.py migrate</code>.</p>
+<p>Thereafter push your Django to Gihub.</p>
+<h2 id="create-postgres-on-render">Create postgres on Render</h2>
+<p>Geodjango requires Postgres to run and because of that, we will create a Postgres instance on Render.</p>
+<p>Inside Render, click on <em>New &gt; Postgres</em>. </p>
+<p>Provide a unique <strong>Name</strong>.</p>
+<p>Provide <strong>Database</strong> name. </p>
+<p>Select the <strong>Region</strong> that will host your Postgres instance. </p>
+<p>Leave <strong>PostgreSQL</strong> version at its default. </p>
+<p>Select <strong>Free</strong> under <strong>Instance Type</strong> and click <strong>Create Database</strong>. Wait for your database to be created.</p>
+<h2 id="create-django-web-service-on-render">Create Django web service on Render</h2>
+<p>On Render, create <em>New &gt; Web Service</em>. </p>
+<p>Create a unique <strong>Name</strong> for your web service</p>
+<p>Select a <strong>Region</strong> that will host your web service.</p>
+<p>Leave <strong>Instance Type</strong> as free. </p>
+<p>Next to <strong>Build Command</strong>, we shall provide our <code>requirements.txt</code> file. Use these values: <code>pip install -r requirements.txt</code>.</p>
+<p>Under <strong>Start Command</strong>, use this: <code>python manage.py runserver 0.0.0.0:8000</code>. </p>
+<p>For the <strong>Environment Variables</strong>, the <em>Key</em> and <em>Value</em> parameters will be as follows, respectively.</p>
+<p>Key: <code>PYTHON_VERSION</code>              Value: <code>3.10.12</code></p>
+<p>DATABASE_URL:                 <code>&lt;your-postgres-internal-or-external-database-url&gt;</code></p>
+<p>For the <code>DATABASE_URL</code>, we shall use either the internal or external database url for the Postgres instance we created earlier. These values can be found in the <em>Info</em> tab of your Postgres instance on render.</p>
+<p>Once satisfied, go ahead and deploy your django web service.</p>
+<p>At the end of the deployment, a link will be provided at the very top. Here is our Pro GMO website. Unfortunately, the other hosted webpages showing the results of our questions couldn&apos;t be displayed. </p>
+<p><img src="images/pro_gmo_website.PNG" alt="Pro GMO website"></p>
+<p>Kindly leave me a comment on the Github Repo for this project if you manage, or have previously managed to host a Geodjango app on Render.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="20-geodjango-leaflet.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Chapter 20: Django leaflet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 21: Render a Geodjango app","level":"1.23","depth":1,"previous":{"title":"Chapter 20: Django leaflet","level":"1.22","depth":1,"path":"20-geodjango-leaflet.md","ref":"20-geodjango-leaflet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"21-render-geodjango.md","mtime":"2025-07-02T17:27:17.146Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:24:15.522Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

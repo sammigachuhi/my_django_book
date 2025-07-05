@@ -1,0 +1,571 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 15: The Render server · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="16-creating-geodjang-project.md" />
+    
+    
+    <link rel="prev" href="14-adding-users.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="oo-introduction.md">
+            
+                <span>
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-installing.html">
+            
+                <a href="01-installing.html">
+            
+                    
+                    Chapter 01: Installing Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-github.html">
+            
+                <a href="02-github.html">
+            
+                    
+                    Chapter 2: A basic overview of Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-views.html">
+            
+                <a href="03-views.html">
+            
+                    
+                    Chapter 3: A Django view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-routes.html">
+            
+                <a href="04-routes.html">
+            
+                    
+                    Chapter 4: Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-base-template.html">
+            
+                <a href="05-base-template.html">
+            
+                    
+                    Chapter 5: Base template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-new-webpage.html">
+            
+                <a href="06-new-webpage.html">
+            
+                    
+                    Chapter 6: Webpages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-rendering-dash-apps.html">
+            
+                <a href="07-rendering-dash-apps.html">
+            
+                    
+                    Chapter 7: Dash in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-another-app.html">
+            
+                <a href="08-another-app.html">
+            
+                    
+                    Chapter 8: Another Django app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-creating-models.html">
+            
+                <a href="09-creating-models.html">
+            
+                    
+                    Chapter 09: A model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-django-admin.html">
+            
+                <a href="10-django-admin.html">
+            
+                    
+                    Chapter 10: Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11-django-admin-changes.html">
+            
+                <a href="11-django-admin-changes.html">
+            
+                    
+                    Chapter 11: Modifications in Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12-model-modifications.html">
+            
+                <a href="12-model-modifications.html">
+            
+                    
+                    Chapter 12: Foreign keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13-adding-images.html">
+            
+                <a href="13-adding-images.html">
+            
+                    
+                    Chapter 13: Images in Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14-adding-users.html">
+            
+                <a href="14-adding-users.html">
+            
+                    
+                    Chapter 14: Adding users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="15-rendering-on-render.html">
+            
+                <a href="15-rendering-on-render.html">
+            
+                    
+                    Chapter 15: The Render server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16-creating-geodjang-project.md">
+            
+                <span>
+            
+                    
+                    Chapter 16: Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17-geodjango-essentials.html">
+            
+                <a href="17-geodjango-essentials.html">
+            
+                    
+                    Chapter 17: Configuring Geodjango
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18-geodjango-model.html">
+            
+                <a href="18-geodjango-model.html">
+            
+                    
+                    Chapter 18: Geodjango model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19-geodjango-homepage.html">
+            
+                <a href="19-geodjango-homepage.html">
+            
+                    
+                    Chapter 19: A Geodjango template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20-geodjango-leaflet.html">
+            
+                <a href="20-geodjango-leaflet.html">
+            
+                    
+                    Chapter 20: Django leaflet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21-render-geodjango.html">
+            
+                <a href="21-render-geodjango.html">
+            
+                    
+                    Chapter 21: Render a Geodjango app
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 15: The Render server</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-15-the-render-server">Chapter 15: The Render server</h1>
+<h2 id="what-is-render">What is render</h2>
+<p><a href="https://render.com/about" target="_blank">Render</a> is a deployment service that enables developers ship their applications to production with minimal code and reduced time. </p>
+<h2 id="deploying-our-django-app-to-render">Deploying our Django app to render</h2>
+<p>Inasmuch Render endeavours to make deployment painless, there are a few steps we need to undertake. </p>
+<p>The first involves installing the necessary packages that will make our deployment process as smooth as possible. </p>
+<p>Ensure that your virtual environment is active, that you are within the <code>sanitation/</code> project folder and install the following packages: <code>gunicorn</code>, <code>whitehouse</code> and <code>psycopg2-binary</code>.</p>
+<pre><code>pip install gunicorn whitenoise psycopg2-binary
+</code></pre><p>Now create a <code>requirements.txt</code> file that will contain all the packages that you have installed ever since you started your Django project. Still within the <code>sanitation</code> project directory, run the following:</p>
+<pre><code>pip freeze &gt; requirements.txt
+</code></pre><p>The above line of code will create a <code>requirements.txt</code> file within your project folder that will contain all the packages you&apos;ve installed in the virtual environment of your project. </p>
+<h2 id="modify-the-settingspy-file">Modify the <code>settings.py</code> file</h2>
+<p>Now, we want our Django app to run on any <a href="https://labex.io/questions/how-to-configure-django-allowed-hosts-153741" target="_blank">host</a> server. To do so, we will set our <code>ALLOWED_HOSTS</code> variable to <code>[&apos;*&apos;]</code>. </p>
+<pre><code>ALLOWED_HOSTS = [&apos;*&apos;]
+</code></pre><p>However, if we wanted to only allow a specific host in which our Django app would run, we would have inserted the host name inside the square brackets. </p>
+<p>The <code>ALLOWED_HOSTS</code> variable is important in allowing the Django app to accept requests from certain domains. But for now, we want to dynamically work with any host server.</p>
+<h2 id="configure-static-files-for-whitenoise">Configure static files for <code>WhiteNoise</code></h2>
+<p><code>WhiteNoise</code> is a package that enables your webapp to serve its own static files. Static files are files that don&apos;t change when your application is running and include your Javascript, HTML and Cascade Styling Sheet (CSS) files. Without whitenoise, you would require external servers such as Amazon S3 to serve your app&apos;s static files. </p>
+<p>Add the following line at the top of your <code>settings.py</code> file.</p>
+<pre><code>import os
+</code></pre><p>Insert the following lines at the very bottom of your <code>settings.py</code> file.</p>
+<pre><code>STATIC_ROOT = os.path.join(BASE_DIR, &apos;staticfiles&apos;)
+STATICFILES_STORAGE = &quot;whitenoise.storage.CompressedManifestStaticFilesStorage&quot;
+</code></pre><p><code>STATIC_ROOT</code> -  tells Django where to put your static files when you prepare your site for deployment.</p>
+<p><code>STATICFILES_STORAGE</code> - tells Django how to handle and serve those static files, specifically using WhiteNoise to compress them, give them unique names for better caching, and set up proper caching rules.</p>
+<p>The above two lines are important in enabling your webapp render pages quickly while live!</p>
+<h2 id="run-migrations">Run migrations</h2>
+<p>Having defined the settings on how to <a href="https://www.geeksforgeeks.org/everything-about-django-collectstatic-command/" target="_blank">render our static files</a>, next is to migrate all our changes and deploy our Django app to Render.</p>
+<p>Run the following code:</p>
+<pre><code>python manage.py collectstatic --noinput
+</code></pre><p>The <code>collectstatic</code> command is a built-in Django management command that collects all static files from our project, including files from each installed app, and then places them into a single location, specified by the <code>STATIC_ROOT</code> setting. This location is where our web server will look for static files to serve to the end users.</p>
+<p>When we run the <code>python manage.py collectstatic --noinput</code>, we are executing the above actions but our <code>--noinput</code> tells the deployment server to continue deploying the static files without requiring any user input, which might cause the app or the deployment process to hang.</p>
+<p>Thereafter, to implement our migrations we run <code>python3 manage.py makemigrations</code> and <code>python3 manage.py migrate</code> in that order.</p>
+<p>Save your Django app to Github.</p>
+<h2 id="render">Render</h2>
+<p>Create an account in Render and proceed to <strong>Create a web service</strong> menu.</p>
+<p>Connect Render to the Github account containing your Django app.</p>
+<p>Give your Project a name. In our case it was <code>Django sanitation app</code>.</p>
+<p>Select the <strong>Region</strong> you would like your services to be hosted. In our case -- <code>Singapore (Southeast Asia)</code>.</p>
+<p>Specify the Github branch holding your Django project. In our case it is <code>main</code> branch.</p>
+<p>For <strong>Root Directory</strong>, specify the directory containing all your Django apps. If all your Django apps are in the root directory, no need to specify this. However, if all your apps are within a single directory, such as <code>sanitation/</code> in our case, go ahead and specify this. Once you write the root directory, Render will autopopulate the root directory name in the subsequent text boxes.</p>
+<p>For <strong>Build Command</strong>, insert <code>pip install -r requirements.txt</code>. </p>
+<p>For <strong>Start Command</strong>, insert <code>python manage.py runserver 0.0.0.0:8000</code>.</p>
+<p>For the <strong>Environment Variables</strong>, insert <code>PYTHON_VERSION</code> and <code>3.10.12</code> in the <strong>Key</strong> and <strong>Value</strong> fields respectively.</p>
+<p>Click on <strong>Create web service</strong> and Render will build and deploy your app. </p>
+<p>If you would like to visually follow along the above steps, watching this video which will be very helpful as it similar to our case. <a href="https://www.youtube.com/watch?v=MPGoy5rp1GE" target="_blank">video</a></p>
+<p>Our app is found on this link: <a href="https://django-sanitation-app.onrender.com/" target="_blank">https://django-sanitation-app.onrender.com/</a>.</p>
+<p>Our other links such as for <code>australia</code> and <code>questionnaire</code> still work. </p>
+<p><a href="https://django-sanitation-app.onrender.com/australia/" target="_blank">https://django-sanitation-app.onrender.com/australia/</a></p>
+<p><a href="https://django-sanitation-app.onrender.com/australia/questionnaires" target="_blank">https://django-sanitation-app.onrender.com/australia/questionnaires</a></p>
+<p>Click on a questionnaire and see it open up our responses!</p>
+<p><img src="images/django_render.PNG" alt="Django on Render"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="14-adding-users.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 14: Adding users">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="16-creating-geodjang-project.md" class="navigation navigation-next " aria-label="Next page: Chapter 16: Geodjango">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 15: The Render server","level":"1.17","depth":1,"next":{"title":"Chapter 16: Geodjango","level":"1.18","depth":1,"path":"16-creating-geodjang-project.md","ref":"16-creating-geodjang-project.md","articles":[]},"previous":{"title":"Chapter 14: Adding users","level":"1.16","depth":1,"path":"14-adding-users.md","ref":"14-adding-users.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"15-rendering-on-render.md","mtime":"2025-06-24T18:23:07.830Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-05T17:24:15.522Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
